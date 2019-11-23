@@ -14,6 +14,9 @@
 		214E567D236464A700CF74EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214E567C236464A700CF74EC /* Assets.xcassets */; };
 		214E5680236464A700CF74EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214E567E236464A700CF74EC /* LaunchScreen.storyboard */; };
 		214E568B236464A700CF74EC /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214E568A236464A700CF74EC /* CalculatorTests.swift */; };
+		2184ACAB2380388000A3F332 /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184ACAA2380388000A3F332 /* CalculatorModel.swift */; };
+		2184ACAD2380389100A3F332 /* CalculatorModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184ACAC2380389100A3F332 /* CalculatorModelImpl.swift */; };
+		2184ACB12380477E00A3F332 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184ACB02380477E00A3F332 /* Assembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		214E5686236464A700CF74EC /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		214E568A236464A700CF74EC /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		214E568C236464A700CF74EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2184ACAA2380388000A3F332 /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
+		2184ACAC2380389100A3F332 /* CalculatorModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModelImpl.swift; sourceTree = "<group>"; };
+		2184ACB02380477E00A3F332 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		212F84D92376FD4B004D46E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2184ACA92380387100A3F332 /* Implementation */,
+				2184ACA82380386800A3F332 /* Interface */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		214E5666236464A600CF74EC = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +94,8 @@
 		214E5671236464A600CF74EC /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				2184ACAF2380477300A3F332 /* Assembly */,
+				212F84D92376FD4B004D46E3 /* Model */,
 				214E5672236464A600CF74EC /* AppDelegate.swift */,
 				214E5674236464A600CF74EC /* ViewController.swift */,
 				214E5676236464A600CF74EC /* Main.storyboard */,
@@ -97,6 +114,30 @@
 				214E568C236464A700CF74EC /* Info.plist */,
 			);
 			path = CalculatorTests;
+			sourceTree = "<group>";
+		};
+		2184ACA82380386800A3F332 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2184ACAA2380388000A3F332 /* CalculatorModel.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		2184ACA92380387100A3F332 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				2184ACAC2380389100A3F332 /* CalculatorModelImpl.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		2184ACAF2380477300A3F332 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				2184ACB02380477E00A3F332 /* Assembly.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +242,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				214E5675236464A600CF74EC /* ViewController.swift in Sources */,
+				2184ACB12380477E00A3F332 /* Assembly.swift in Sources */,
+				2184ACAD2380389100A3F332 /* CalculatorModelImpl.swift in Sources */,
+				2184ACAB2380388000A3F332 /* CalculatorModel.swift in Sources */,
 				214E5673236464A600CF74EC /* AppDelegate.swift in Sources */,
 				214E567B236464A600CF74EC /* Calculator.xcdatamodeld in Sources */,
 			);
@@ -365,7 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5G22P334F2;
+				DEVELOPMENT_TEAM = QYUF6SP3TV;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -383,7 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5G22P334F2;
+				DEVELOPMENT_TEAM = QYUF6SP3TV;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
